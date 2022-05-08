@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+/* Navbar */
+nav{
+    background-color: black;
+    height: 11vh;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li{
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    margin: 1rem;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: white;
+    border-bottom: 3px solid yellow;
+}
+
+nav ul li a:active{
+    color: white;
+    border-bottom: 3px solid yellow;
+}
+
+
+/* Main Content */
+/* .main-content{
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    background: url("main-background.jpg");
+    background-size: cover;
+} */
+
+.main-content{
+    background: url("main-background.jpg");
+    height: 80vh;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.title{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.title p{
+    font-size: clamp(0.8rem, 2.2vw + 1rem, 5rem);
+    margin-left: 3rem;
+}
+
+.todays-image{
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-image{
+    max-width: 45vw;
+    max-height: 50vh;
+}
+
+/* Carousel */
+.slide-images{
+    margin: 2rem;
+}
+
+.slide-images img{
+    height: 90vh;
+    border-radius: 2rem;
+}
+
+/* Footer */
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 5vh;
+}
+
+
+
+
+/* Explore */
+
+.explore-heading{
+    font-size: clamp(1rem, 2vw + 2rem, 5rem);
+    text-align: center;
+    margin: auto;
+}
+
+.explore-heading h1{
+    padding: 3rem;
+}
